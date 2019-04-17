@@ -3,7 +3,7 @@ import { Selector } from "testcafe";
 
 export class HomePage extends BasePage {
 
-    title = Selector(".title")
+    title = Selector(".header")
     firstPhoto = Selector(".photo")
     attempts = Selector(".attempts")
 

@@ -4,6 +4,12 @@ const page = new HomePage();
 
 fixture`Home - Desktop`.page(page.baseUrl);
 
+test('Correct title displays', async t => {
+    await t
+        .expect(page.title.textContent)
+        .eql("name game")
+});
+
 test('Attempts counter increments after selecting a photo', async t => {
     const initialAttemptsCount = Number(await page.attempts.textContent)
     
