@@ -1,21 +1,11 @@
-import { ClientFunction, t } from "testcafe";
+import { Selector } from "testcafe";
 
 export class BasePage {
+
     baseUrl = 'http://www.ericrochester.com/name-game/';
-    
-    getPageUrl = ClientFunction(() => window.location.href);
 
-    clickClientBackButton = ClientFunction(() => window.history.back());
+    title = Selector(".header")
+    firstPhoto = Selector(".photo")
+    attempts = Selector(".attempts")
 
-    reloadPage = async() => {
-        await t.eval(() => location.reload(true));
-    };
-
-    waitFor = async(selector) => {
-        try {
-            await selector();
-        } catch (error) {
-            console.log(error);
-        }
-    }
 }

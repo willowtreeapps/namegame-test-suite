@@ -1,8 +1,8 @@
-import { HomePage } from "../pages/HomePage";
+import { BasePage } from "../pages/BasePage";
 
-const page = new HomePage();
+const page = new BasePage();
 
-fixture`Home - Desktop`.page(page.baseUrl);
+fixture`Home`.page(page.baseUrl);
 
 test('Correct title displays', async t => {
     await t
