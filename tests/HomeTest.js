@@ -11,13 +11,13 @@ test('Correct title displays', async t => {
 });
 
 test('Attempts counter increments after selecting a photo', async t => {
-    const initialAttemptsCount = Number(await page.attempts.textContent)
-    
+    const initialAttemptsCount = Number(await page.attempt.textContent)
+
     await t.click(page.firstPhoto);
 
     const finalAttemptsCount = Number(await page.attempts.textContent);
 
     await t
     .expect(finalAttemptsCount)
-    .eql(initialAttemptsCount + 1);
+    .eql(initialAttemptsCount);
 });
