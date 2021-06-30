@@ -5,7 +5,8 @@ export class BasePage {
     baseUrl = 'http://www.ericrochester.com/name-game/';
 
     title = Selector(".header")
-    firstPhoto = Selector(".photo")
+    photo = Selector(".photo")
     attempts = Selector(".attempts")
-
+    nameToGuess = Selector("[id=name]");
+    streak = Selector(".streak")
 }
