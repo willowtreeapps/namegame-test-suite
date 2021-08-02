@@ -12,8 +12,8 @@ test('Correct title displays', async t => {
 
 test('Attempts counter increments after selecting a photo', async t => {
     const initialAttemptsCount = Number(await page.attempts.textContent)
-    
-    await t.click(page.firstPhoto);
+
+    await t.click(page.photo);
 
     const finalAttemptsCount = Number(await page.attempts.textContent);
 
