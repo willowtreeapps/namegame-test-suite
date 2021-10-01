@@ -2,7 +2,7 @@ import { Selector } from "testcafe";
 
 export class BasePage {
 
-    baseUrl = 'http://www.ericrochester.com/name-game/';
+    baseUrl = 'https://willowtreeapps.github.io/TE-namegame-interview/';
 
     title = Selector(".header")
     photo = Selector(".photo")
