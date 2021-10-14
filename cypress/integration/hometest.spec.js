@@ -16,14 +16,12 @@ describe("Home", () => {
   });
 
   it("Increases Attempts Counter After Selecting A Photo", () => {
-    // Incorrect version will have `.attempt` instead of `.attempts`
     cy.get(".attempts").then((initialAttempts) => {
       // `cy.get().eq()` selects the `nth` element yielded by `cy.get()`
       // TestCafe version of this would be: `Selector().nth(0)`
       cy.get(".photo").eq(0).click();
       cy.get(".attempts").should(
         "have.text",
-        // Incorrect version will not have the `+ 1`)
         String(Number(initialAttempts.text()) + 1)
       );
     });
