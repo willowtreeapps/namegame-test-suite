@@ -22,7 +22,7 @@ describe("Home", () => {
       cy.get(".photo").eq(0).click();
       cy.get(".attempts").should(
         "have.text",
-        String(Number(initialAttempts.text()) + 1)
+        String(Number(initialAttempts.text()))
       );
     });
   });
