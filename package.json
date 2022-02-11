@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Automated test suite for WillowTree's Name Game",
   "scripts": {
+    "cy": "cypress open",
     "cy:chrome": "cypress run --headed --browser chrome",
     "cy:chromium": "cypress run --headed --browser chromium",
     "cy:firefox": "cypress run --headed --browser firefox",

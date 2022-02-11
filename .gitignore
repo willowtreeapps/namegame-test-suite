@@ -1,2 +1,9 @@
+.vscode
 node_modules
 package-lock.json
+
+cypress/fixtures
+cypress/videos
+cypress/screenshots
+cypress/support
+cypress/plugins
