@@ -28,7 +28,7 @@ describe("Home", () => {
             .click()
             // Cypress occasionally moves too quick and checks before the text value has updated in the UI
             .wait(1000);
-          cy.get(".attempts")
+          cy.get(".attempt")
             // `cy.should('have.text', foo)` compares the text of the element yielded in `cy.get()` to the expected, in this example `foo`
             .should("have.text", expected);
         });
