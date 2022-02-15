@@ -2,6 +2,7 @@
 node_modules
 package-lock.json
 
+# Cypress
 cypress/fixtures
 cypress/videos
 cypress/screenshots
